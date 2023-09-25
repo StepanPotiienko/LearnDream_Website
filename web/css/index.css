@@ -1,0 +1,44 @@
+/* This file is only used in index.html page */
+/* I've removed div {width: 1245px;} because it ruined the navbar D: */
+
+.mission-vision {
+    height: 100%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 78px;
+}
+
+.subtitle {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.mission-vision .subtitle {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.text {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+}
+
+.vstup_rectangle {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 118px;
+    background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
+}

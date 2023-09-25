@@ -1,0 +1,31 @@
+/* This file is for adding and modifying fonts */
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Bold Italic";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Medium Italic";
+    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-MediumItalic.ttf");
+}
