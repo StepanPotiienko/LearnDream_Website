@@ -42,3 +42,27 @@
     height: 118px;
     background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
+
+#blocks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.group-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    gap: 10vw;
+
+}
+
+#accordionExample {
+    width: 50vw;
+}
+
+#carouselExample {
+    width: 30vw;
+}

@@ -23,3 +23,8 @@ body {
         height: 100vh;
     }
 }
+
+.carousel-indicator {
+    transform: scaleX(0.4) scaleY(4);
+    border-radius: 100%;
+}
