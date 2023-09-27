@@ -66,3 +66,44 @@
 #carouselExample {
     width: 30vw;
 }
+
+.vstup_rectangle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 118px;
+    background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    margin-left: 28px;
+}
+
+.vstup_rectangle .text {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 59px;
+}
+
+.fill_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 57px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: 169px;
+}
