@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 bg-opacity-75 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 sticky-top d-flex">
         <div class="container-fluid">
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -51,9 +51,9 @@
                                 Вступ
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Як вступити</a></li>
+                                <li><a class="dropdown-item" href="#admission">Як вступити</a></li>
                                 <li><a class="dropdown-item" href="#">Вартість навчання</a></li>
-                                <li><a class="dropdown-item" href="#">Заповнити анкету</a></li>
+                                <li><a class="dropdown-item" href="#admission">Заповнити анкету</a></li>
                             </ul>
                         </div>
                     </li>
@@ -83,7 +83,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="btn btn-warning rounded-pill" type="submit">Зв'язатися з нами</button>
+                <button class="btn btn-warning rounded-pill w-25" type="submit">Зв'язатися з нами</button>
             </div>
         </div>
     </nav>
@@ -117,7 +117,7 @@
 
     </div>
 
-    <p class="subtitle">
+    <p class="subtitle" id="admission">
         <span class="text-accent">Вступ</span> до школи
     </p>
 
@@ -137,6 +137,11 @@
         <img src="/web/images/atom.png" alt="" class="image">
         <p class="text">5-8 клас</p>
         <a href="" class="fill_form">Заповнити анкету</a>
+    </div>
+
+    <div
+        style="width: 100%; display: flex; justify-content: center; align-items: center; padding-top: 3%; padding-bottom: 8%;">
+        <button class="btn btn-lg rounded-pill btn-warning text-uppercase">Детальніше</button>
     </div>
 
     <div class="svg-full">
@@ -224,6 +229,24 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </div>
+    </div>
+
+    <div id="reviews" class="m-5 d-flex flex-column">
+        <h2 class="display-4 text-center bold">Які <span class="text-accent">відгуки</span> про нас залишають?</h2>
+        <div class="review p-3 mt-5 align-self-start">
+            <h6 class="display-6 text-accent bold">Марго, 26</h6>
+            <p class="text text-justify">
+                Моя мрія це - косметична промисловість, а біологія, яка треба для екзаменів надто складна наука.
+                Вивчення програми 9 класу перед екзаменами почалось важко, адже почався пошук.
+            </p>
+        </div>
+        <div class="review p-3 mt-5 align-self-end">
+            <h6 class="display-6 text-accent bold">Марго, 26</h6>
+            <p class="text text-justify">
+                Моя мрія це - косметична промисловість, а біологія, яка треба для екзаменів надто складна наука.
+                Вивчення програми 9 класу перед екзаменами почалось важко, адже почався пошук.
+            </p>
         </div>
     </div>
 
