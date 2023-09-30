@@ -107,3 +107,47 @@
     margin-left: auto;
     margin-right: 169px;
 }
+
+.slide {
+    display: flex;
+    position: relative;
+    width: 1442px;
+    height: 817px;
+    margin: 0 auto;
+    margin-top: 51px;
+    margin-bottom: 100px;
+}
+
+.rectangle_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #57aeff;
+    width: 757px;
+    border-radius: 0;
+}
+
+.slide .text {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 105px 0 105px;
+}
+
+.slide .image {
+    margin: 0;
+}
+
+.rectangle_blue img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lightning {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 0%;
+}
