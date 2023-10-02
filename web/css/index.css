@@ -158,3 +158,65 @@
     -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
 }
+
+footer {
+    font-family: "Montserrat Medium";
+    width: 100%;
+    height: 80vh;
+    background: rgb(87, 174, 255);
+    background: linear-gradient(317deg, rgba(87, 174, 255, 1) 0%, rgba(0, 209, 255, 1) 33%, rgba(20, 0, 255, 1) 71%, rgba(2, 0, 26, 1) 97%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: #fff;
+}
+
+#footer-form {
+    width: 40%;
+    height: 70vh;
+    user-select: none;
+    border: 3px solid #fff;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 3%;
+}
+
+#footer-form input {
+    all: unset;
+    padding: 2%;
+    margin: 2%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #fff;
+}
+
+#footer-form input::placeholder {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#footer-form label {
+    margin-top: 3%;
+    font-weight: 800;
+}
+
+#footer-form textarea {
+    all: unset;
+    border: 3px solid #fff;
+}
+
+#footer-form button {
+    all: unset;
+    padding: 3%;
+    font-size: 1.5em;
+    transition: .5s;
+}
+
+#footer-form button:hover {
+    color: #292b2c !important;
+    background-color: #f0ad4e;
+    box-shadow: 0px 0px 10px #00000064;
+}
