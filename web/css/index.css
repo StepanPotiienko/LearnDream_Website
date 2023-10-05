@@ -162,17 +162,17 @@
 footer {
     font-family: "Montserrat Medium";
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background: rgb(87, 174, 255);
     background: linear-gradient(317deg, rgba(87, 174, 255, 1) 0%, rgba(0, 209, 255, 1) 33%, rgba(20, 0, 255, 1) 71%, rgba(2, 0, 26, 1) 97%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #fff;
 }
 
 #footer-form {
-    width: 40%;
+    width: 30%;
     height: 70vh;
     user-select: none;
     border: 3px solid #fff;
@@ -210,7 +210,7 @@ footer {
 
 #footer-form button {
     all: unset;
-    padding: 3%;
+    padding: 2%;
     font-size: 1.5em;
     transition: .5s;
 }
@@ -221,6 +221,43 @@ footer {
     box-shadow: 0px 0px 10px #00000064;
 }
 
+#footer-contacts {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+.col button {
+    all: unset;
+    padding: 3%;
+    width: 30%;
+    height: 8vh;
+    background-color: #f0ad4e;
+    font-size: 3em;
+    text-align: center;
+    transition: .5s;
+}
+
+.col button:hover {
+    transform: scale(1.1);
+}
+
 .arrow {
     margin-right: 82px;
+}
+
+#addresses ul {
+    all: unset;
+    list-style-type: none;
+}
+
+#addresses ul li {
+    margin-top: 2vh;
 }
