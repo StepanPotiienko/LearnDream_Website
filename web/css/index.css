@@ -172,8 +172,8 @@ footer {
 }
 
 #footer-form {
-    width: 30%;
-    height: 70vh;
+    width: 40%;
+    height: 80vh;
     user-select: none;
     border: 3px solid #fff;
     border-radius: 5%;
@@ -229,24 +229,39 @@ footer {
     margin-top: 1%;
 }
 
+.container {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 1vh;
+}
+
 .col {
-    margin: 0;
-    padding: 0;
+    all: unset;
 }
 
 .col button {
     all: unset;
-    padding: 3%;
-    width: 30%;
+    cursor: pointer;
+    width: 4vw;
     height: 8vh;
     background-color: #f0ad4e;
-    font-size: 3em;
+    border-radius: 25%;
     text-align: center;
-    transition: .5s;
+    font-size: 3rem;
 }
 
 .col button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px #00000050;
 }
 
 .arrow {
