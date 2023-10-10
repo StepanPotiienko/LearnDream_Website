@@ -9,6 +9,10 @@
     margin-top: 78px;
 }
 
+nav {
+    width: 100vw;
+}
+
 .subtitle {
     font-family: 'Montserrat Bold', sans-serif;
     font-size: 40px;
@@ -69,11 +73,6 @@
     background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
-.image {
-    height: 100px;
-    width: 100px;
-    margin-left: 28px;
-}
 
 .vstup_rectangle .text {
     color: white;
@@ -112,8 +111,13 @@
     width: 1442px;
     height: 817px;
     margin: 0 auto;
-    margin-top: 51px;
-    margin-bottom: 100px;
+}
+
+.lightning {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 0%;
 }
 
 .rectangle_blue {
@@ -133,25 +137,20 @@
     margin: 0 105px 0 105px;
 }
 
-.slide_info .image {
-    margin: 0;
-}
-
 .rectangle_blue img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.lightning {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 0%;
+#reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .review {
-    width: 50%;
+    width: 75%;
     height: auto;
     border: 2px solid #000;
     -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
@@ -165,10 +164,10 @@ footer {
     height: 90vh;
     background: rgb(87, 174, 255);
     background: linear-gradient(317deg, rgba(87, 174, 255, 1) 0%, rgba(0, 209, 255, 1) 33%, rgba(20, 0, 255, 1) 71%, rgba(2, 0, 26, 1) 97%, rgba(0, 0, 0, 1) 100%);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 #footer-form {
@@ -257,11 +256,11 @@ footer {
     border-radius: 25%;
     text-align: center;
     font-size: 3rem;
+    transition: .2s;
 }
 
 .col button:hover {
     transform: scale(1.05);
-    box-shadow: 2px 2px 2px #00000050;
 }
 
 .arrow {
