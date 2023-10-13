@@ -2,225 +2,284 @@
 /* I've removed div {width: 1245px;} because it ruined the navbar D: */
 
 .mission-vision {
-    height: 100%;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-top: 78px;
+  height: 100%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 78px;
 }
 
 .subtitle {
-    font-family: 'Montserrat Bold', sans-serif;
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    margin-top: 100px;
-    text-align: center;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .mission-vision .subtitle {
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 50px;
-    text-align: left;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: left;
 }
 
 .text {
-    font-family: 'Montserrat Regular', sans-serif;
-    font-size: 1.3em;
-    font-weight: 300;
-    line-height: 29px;
-    letter-spacing: 0em;
-    margin-top: 1vh;
-    margin-bottom: 0px;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-top: 1vh;
+  margin-bottom: 0px;
 }
 
 .vstup_rectangle {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 118px;
-    background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 118px;
+  background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 .group-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90vw;
-    gap: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  gap: 3vw;
 }
 
 #accordionExample {
-    width: 50vw;
+  width: 50vw;
 }
 
 #carouselExample {
-    width: 40vw;
+  width: 40vw;
 }
 
 .vstup_rectangle {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 118px;
-    background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 118px;
+  background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 .image {
-    height: 100px;
-    width: 100px;
-    margin-left: 28px;
+  height: 100px;
+  width: 100px;
+  margin-left: 28px;
 }
 
 .vstup_rectangle .text {
-    color: white;
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0;
-    margin-left: 59px;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 59px;
 }
 
 .fill_form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 57px;
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: 82px;
-    transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 57px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: 82px;
+  transition: 0.5s;
 }
 
 .fill_form:hover {
-    background-color: transparent;
-    color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .slide_info {
-    display: flex;
-    position: relative;
-    width: 1442px;
-    height: 817px;
-    margin: 0 auto;
-    margin-top: 51px;
-    margin-bottom: 100px;
+  display: flex;
+  position: relative;
+  width: 1442px;
+  height: 817px;
+  margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 100px;
 }
 
 .rectangle_blue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: #57aeff;
-    width: 757px;
-    border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #57aeff;
+  width: 757px;
+  border-radius: 0;
 }
 
 .slide_info .text {
-    color: white;
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0 105px 0 105px;
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 105px 0 105px;
 }
 
 .slide_info .image {
-    margin: 0;
+  margin: 0;
 }
 
 .rectangle_blue img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .lightning {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 0%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0%;
 }
 
 .review {
-    width: 50%;
-    height: auto;
-    border: 2px solid #000;
-    -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  width: 50%;
+  height: auto;
+  border: 2px solid #000;
+  -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
 }
 
 footer {
-    font-family: "Montserrat Medium";
-    width: 100%;
-    height: 80vh;
-    background: rgb(87, 174, 255);
-    background: linear-gradient(317deg, rgba(87, 174, 255, 1) 0%, rgba(0, 209, 255, 1) 33%, rgba(20, 0, 255, 1) 71%, rgba(2, 0, 26, 1) 97%, rgba(0, 0, 0, 1) 100%);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    color: #fff;
+  font-family: "Montserrat Medium";
+  width: 100%;
+  height: 90vh;
+  background: rgb(87, 174, 255);
+  background: linear-gradient(
+    317deg,
+    rgba(87, 174, 255, 1) 0%,
+    rgba(0, 209, 255, 1) 33%,
+    rgba(20, 0, 255, 1) 71%,
+    rgba(2, 0, 26, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 #footer-form {
-    width: 40%;
-    height: 70vh;
-    user-select: none;
-    border: 3px solid #fff;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    margin: 3%;
+  width: 40%;
+  height: 80vh;
+  user-select: none;
+  border: 3px solid #fff;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  margin: 3%;
+}
+
+#footer-contacts {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.container {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vh;
+  margin-top: 1vh;
+}
+
+.col {
+  all: unset;
+}
+
+.col button {
+  all: unset;
+  cursor: pointer;
+  width: 4.5vw;
+  height: 8vh;
+  background-color: #f0ad4e;
+  border-radius: 25%;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.2s;
+}
+
+.col button:hover {
+  transform: scale(1.05);
+}
+
+#addresses ul {
+  all: unset;
+  list-style-type: none;
+}
+
+#addresses ul li {
+  margin-top: 2vh;
 }
 
 #footer-form input {
-    all: unset;
-    padding: 2%;
-    margin: 2%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #fff;
+  all: unset;
+  padding: 2%;
+  margin: 2%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
 }
 
 #footer-form input::placeholder {
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 2px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 #footer-form label {
-    margin-top: 3%;
-    font-weight: 800;
+  margin-top: 3%;
+  font-weight: 800;
 }
 
 #footer-form textarea {
-    all: unset;
-    border: 3px solid #fff;
+  all: unset;
+  border: 3px solid #fff;
 }
 
 #footer-form button {
-    all: unset;
-    padding: 3%;
-    font-size: 1.5em;
-    transition: .5s;
+  all: unset;
+  padding: 3%;
+  font-size: 1.5em;
+  transition: 0.5s;
 }
 
 #footer-form button:hover {
-    color: #292b2c !important;
-    background-color: #f0ad4e;
-    box-shadow: 0px 0px 10px #00000064;
+  color: #292b2c !important;
+  background-color: #f0ad4e;
+  box-shadow: 0px 0px 10px #00000064;
 }
 
 .arrow {
-    margin-right: 82px;
+  margin-right: 82px;
 }
