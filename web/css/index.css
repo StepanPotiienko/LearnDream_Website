@@ -157,37 +157,6 @@ nav {
   box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
 }
 
-footer {
-  font-family: "Montserrat Medium";
-  width: 100%;
-  height: 90vh;
-  background: rgb(87, 174, 255);
-  background: linear-gradient(
-    317deg,
-    rgba(87, 174, 255, 1) 0%,
-    rgba(0, 209, 255, 1) 33%,
-    rgba(20, 0, 255, 1) 71%,
-    rgba(2, 0, 26, 1) 97%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-#footer-form {
-  width: 40%;
-  height: 80vh;
-  user-select: none;
-  border: 3px solid #fff;
-  border-radius: 5%;
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-  margin: 3%;
-}
-
 #footer-form input {
   all: unset;
   padding: 2%;
@@ -224,60 +193,4 @@ footer {
   color: #292b2c !important;
   background-color: #f0ad4e;
   box-shadow: 0px 0px 10px #00000064;
-}
-
-#footer-contacts {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  padding: 1%;
-  margin-top: 1%;
-}
-
-.container {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  all: unset;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1vh;
-  margin-top: 1vh;
-}
-
-.col {
-  all: unset;
-}
-
-.col button {
-  all: unset;
-  cursor: pointer;
-  width: 4.5vw;
-  height: 8vh;
-  background-color: #f0ad4e;
-  border-radius: 25%;
-  text-align: center;
-  font-size: 3rem;
-  transition: 0.2s;
-}
-
-.col button:hover {
-  transform: scale(1.05);
-}
-
-.arrow {
-  margin-right: 82px;
-}
-
-#addresses ul {
-  all: unset;
-  list-style-type: none;
-}
-
-#addresses ul li {
-  margin-top: 2vh;
 }
