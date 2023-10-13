@@ -48,7 +48,8 @@
   align-items: center;
   justify-content: space-evenly;
   width: 90vw;
-  gap: 3vw;
+  gap: 1vw;
+  margin: auto;
 }
 
 #accordionExample {
@@ -246,6 +247,7 @@ footer {
   all: unset;
   padding: 2%;
   margin: 2%;
+  width: 90%;
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #fff;
@@ -264,6 +266,7 @@ footer {
 
 #footer-form textarea {
   all: unset;
+  width: 100%;
   border: 3px solid #fff;
 }
 

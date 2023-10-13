@@ -247,11 +247,13 @@
     </div>
 
     <div class="svg-full">
-      <object
-        data="./web/images/additional_education.svg"
-        width="100%"
-        height="auto"
-      ></object>
+      <marquee scrollamount="20" behavior="scroll">
+        <object
+          data="./web/images/additional_education.svg"
+          width="100%"
+          height="auto"
+        ></object>
+      </marquee>
     </div>
 
     <div id="additional_education" class="m-3">
@@ -440,7 +442,7 @@
           <input type="phone" placeholder="Телефон" /><br />
           <input required type="email" placeholder="Email *" /><br />
           <label for="comment">Коментар</label><br />
-          <textarea name="comment" cols="60" rows="5"></textarea><br />
+          <textarea name="comment" rows="5"></textarea><br />
           <div
             style="
               width: 100%;
