@@ -153,11 +153,19 @@
 
 .review {
   width: 50%;
-  height: auto;
-  border: 2px solid #000;
-  -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  height: 50vh;
+  background: url(https://thenounproject.com/api/private/icons/118948/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0);
+  background-size: 179% 205%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.triangle {
+  width: 0;
+  border-left: 2vh solid transparent;
+  border-right: 2vh solid transparent;
+
+  border-top: 2vh solid rgb(0, 0, 0);
 }
 
 footer {
@@ -221,17 +229,18 @@ footer {
 .col button {
   all: unset;
   cursor: pointer;
-  width: 4.5vw;
-  height: 8vh;
+  width: 2vw;
+  height: 4vh;
   background-color: #f0ad4e;
   border-radius: 25%;
   text-align: center;
-  font-size: 3rem;
-  transition: 0.2s;
+  font-size: 1rem;
+  transition: 0.5s;
 }
 
 .col button:hover {
-  transform: scale(1.05);
+  color: whitesmoke;
+  background-color: #f0c180;
 }
 
 #addresses ul {
