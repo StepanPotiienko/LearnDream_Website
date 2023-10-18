@@ -430,6 +430,32 @@
       </div>
     </div>
 
+    <div id="schools">
+      <h2 class="bold text-lg text-center subtitle">
+        Наші <span class="text-accent">заклади</span>
+      </h2>
+      <div id="gfg">
+        <ul>
+          <li><a href="#gfg1">Школи</a></li>
+          <li><a href="#gfg2">Дитячі садочки</a></li>
+        </ul>
+
+        <div id="gfg1">
+          <img
+            src="https://previews.123rf.com/images/vaitekune/vaitekune1207/vaitekune120700001/14311687-school-building.jpg"
+            alt=""
+          />
+        </div>
+
+        <div id="gfg2">
+          <img
+            src="https://www.shutterstock.com/image-illustration/colorful-kindergarten-class-without-childs-260nw-1405291151.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div id="footer-form">
         <form action="./" method="POST">
@@ -458,7 +484,7 @@
         </form>
       </div>
       <div id="footer-contacts">
-        <h1>Контакти</h1>
+        <h2>Контакти</h2>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -505,11 +531,20 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      />
+    </script>
+    <script>
+      $(function () {
+        $("#gfg").tabs();
+        $("#gfg").tabs("load", 0);
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   </body>
 </html>

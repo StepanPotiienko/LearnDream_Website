@@ -9,30 +9,11 @@
   margin-top: 78px;
 }
 
-.subtitle {
-  font-family: "Montserrat Bold", sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
-}
-
 .mission-vision .subtitle {
   font-size: 36px;
   font-weight: 600;
   margin-top: 50px;
   text-align: left;
-}
-
-.text {
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
-  line-height: 29px;
-  letter-spacing: 0em;
-  margin-top: 1vh;
-  margin-bottom: 0px;
 }
 
 .vstup_rectangle {
@@ -160,14 +141,6 @@
   background-repeat: no-repeat;
 }
 
-.triangle {
-  width: 0;
-  border-left: 2vh solid transparent;
-  border-right: 2vh solid transparent;
-
-  border-top: 2vh solid rgb(0, 0, 0);
-}
-
 footer {
   font-family: "Montserrat Medium";
   width: 100%;
@@ -229,7 +202,7 @@ footer {
 .col button {
   all: unset;
   cursor: pointer;
-  width: 2vw;
+  width: 4vh;
   height: 4vh;
   background-color: #f0ad4e;
   border-radius: 25%;
@@ -241,6 +214,56 @@ footer {
 .col button:hover {
   color: whitesmoke;
   background-color: #f0c180;
+}
+
+#schools {
+  padding: 2%;
+}
+
+#gfg,
+#gfg ul {
+  all: unset;
+}
+
+#gfg ul li {
+  all: unset;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid black;
+  background: #b8ddff;
+  padding: 1vh;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+}
+
+#gfg ul .ui-state-active {
+  background-color: #fbed00;
+}
+
+#gfg ul li:hover {
+  background: hsl(230, 100%, 86%);
+}
+
+#gfg ul li a {
+  cursor: pointer;
+  all: unset;
+}
+
+#gfg1,
+#gfg2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 1vh;
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #addresses ul {
@@ -284,12 +307,12 @@ footer {
   padding: 3%;
   font-size: 1.5em;
   transition: 0.5s;
+  cursor: pointer;
+  transition: 1s;
 }
 
 #footer-form button:hover {
-  color: #292b2c !important;
-  background-color: #f0ad4e;
-  box-shadow: 0px 0px 10px #00000064;
+  transform: scale(1.1);
 }
 
 .arrow {
