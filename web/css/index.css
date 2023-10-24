@@ -4,7 +4,6 @@
 .mission-vision {
   height: 100%;
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   margin-top: 78px;
 }
@@ -22,6 +21,27 @@
   margin-top: 50px;
   height: 118px;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
+}
+
+#admission {
+  color: #000;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+.text-accent {
+  color: #57aeff;
+  text-align: justify;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .group-row {
@@ -194,7 +214,6 @@ footer {
   gap: 1vh;
   margin-top: 1vh;
 }
-
 .col {
   all: unset;
 }
@@ -261,6 +280,7 @@ footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

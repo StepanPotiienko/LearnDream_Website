@@ -3,6 +3,8 @@
 
 body {
   font-family: "Montserrat Regular", sans-serif;
+  background-image: url(/web/images/background.png);
+  background-size: 100%;
 }
 
 html {
@@ -11,25 +13,6 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.text {
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
-  line-height: 29px;
-  letter-spacing: 0em;
-  margin-top: 1vh;
-  margin-bottom: 0px;
-}
-
-.subtitle {
-  font-family: "Montserrat Bold", sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
 }
 
 img,
@@ -55,11 +38,6 @@ iframe {
   border-radius: 100%;
 }
 
-.btn-lg {
-  width: 16vw;
-  height: 5vh;
-}
-
 .bold {
   font-weight: 800;
 }
@@ -81,11 +59,6 @@ iframe {
   color: #fff;
   transform: scale(1.03);
   box-shadow: 0px 0px 10px #00000064;
-}
-
-.btn-warning {
-  background-color: #fce731;
-  border-color: #fce731;
 }
 
 .btn:not(.dropdown-toggle):hover {
