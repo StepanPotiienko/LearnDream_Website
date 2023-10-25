@@ -42,6 +42,22 @@ iframe {
   font-weight: 800;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+  visibility: hidden;
+}
+
+[role="button"] {
+  cursor: unset;
+}
+
 .dropdown-menu {
   border-radius: 0%;
   border: 1px solid #000;
