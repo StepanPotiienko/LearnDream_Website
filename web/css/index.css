@@ -4,8 +4,22 @@
 .mission-vision {
   height: 100%;
   width: 80%;
+  background-color: rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   margin-top: 78px;
+}
+
+nav {
+  width: 100vw;
+}
+
+.subtitle {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .mission-vision .subtitle {
@@ -13,6 +27,16 @@
   font-weight: 600;
   margin-top: 50px;
   text-align: left;
+}
+
+.text {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-top: 1vh;
+  margin-bottom: 0px;
 }
 
 .vstup_rectangle {
@@ -23,34 +47,12 @@
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
-#admission {
-  color: #000;
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-align: center;
-  margin-top: 100px;
-  text-transform: uppercase;
-}
-
-.text-accent {
-  color: #57aeff;
-  text-align: justify;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 .group-row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 90vw;
-  gap: 1vw;
-  margin: auto;
+  gap: 3vw;
 }
 
 #accordionExample {
@@ -61,27 +63,6 @@
   width: 40vw;
 }
 
-#reviews {
-  width: 100%;
-  min-height: 15vh;
-  height: 30vh;
-  max-height: 30vh;
-}
-
-#reviews #text-carousel {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .vstup_rectangle {
   display: flex;
   align-items: center;
@@ -90,12 +71,6 @@
   margin-top: 50px;
   height: 118px;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
-}
-
-.image {
-  height: 100px;
-  width: 100px;
-  margin-left: 28px;
 }
 
 .vstup_rectangle .text {
@@ -135,8 +110,13 @@
   width: 1442px;
   height: 817px;
   margin: 0 auto;
-  margin-top: 51px;
-  margin-bottom: 100px;
+}
+
+.lightning {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0%;
 }
 
 .rectangle_blue {
@@ -156,162 +136,31 @@
   margin: 0 105px 0 105px;
 }
 
-.slide_info .image {
-  margin: 0;
-}
-
 .rectangle_blue img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.lightning {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 0%;
-}
-
-footer {
-  font-family: "Montserrat Medium";
-  width: 100%;
-  height: 90vh;
-  background: rgb(87, 174, 255);
-  background: linear-gradient(
-    317deg,
-    rgba(87, 174, 255, 1) 0%,
-    rgba(0, 209, 255, 1) 33%,
-    rgba(20, 0, 255, 1) 71%,
-    rgba(2, 0, 26, 1) 97%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-#footer-form {
-  width: 40%;
-  height: 80vh;
-  user-select: none;
-  border: 3px solid #fff;
-  border-radius: 5%;
+#reviews {
   display: flex;
   flex-direction: column;
-  padding: 5%;
-  margin: 3%;
+  justify-content: space-evenly;
 }
 
-#footer-contacts {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  padding: 1%;
-  margin-top: 1%;
-}
-
-.container {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  all: unset;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1vh;
-  margin-top: 1vh;
-}
-.col {
-  all: unset;
-}
-
-.col button {
-  all: unset;
-  cursor: pointer;
-  width: 4vh;
-  height: 4vh;
-  background-color: #f0ad4e;
-  border-radius: 25%;
-  text-align: center;
-  font-size: 1rem;
-  transition: 0.5s;
-}
-
-.col button:hover {
-  color: whitesmoke;
-  background-color: #f0c180;
-}
-
-#schools {
-  padding: 2%;
-}
-
-#gfg,
-#gfg ul {
-  all: unset;
-}
-
-#gfg ul li {
-  all: unset;
-  user-select: none;
-  cursor: pointer;
-  border: 1px solid black;
-  background: #b8ddff;
-  padding: 1vh;
-  transition: 0.5s;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
-}
-
-#gfg ul .ui-state-active {
-  background-color: #fbed00;
-}
-
-#gfg ul li:hover {
-  background: hsl(230, 100%, 86%);
-}
-
-#gfg ul li a {
-  cursor: pointer;
-  all: unset;
-}
-
-#gfg1,
-#gfg2 {
-  padding: 0;
-  margin: 0;
-  margin-top: 1vh;
-  animation: fade 0.5s ease-in-out;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-#addresses ul {
-  all: unset;
-  list-style-type: none;
-}
-
-#addresses ul li {
-  margin-top: 2vh;
+.review {
+  width: 75%;
+  height: auto;
+  border: 2px solid #000;
+  -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
 }
 
 #footer-form input {
   all: unset;
   padding: 2%;
   margin: 2%;
-  width: 90%;
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #fff;
@@ -330,23 +179,18 @@ footer {
 
 #footer-form textarea {
   all: unset;
-  width: 100%;
   border: 3px solid #fff;
 }
 
 #footer-form button {
   all: unset;
-  padding: 3%;
+  padding: 2%;
   font-size: 1.5em;
   transition: 0.5s;
-  cursor: pointer;
-  transition: 1s;
 }
 
 #footer-form button:hover {
-  transform: scale(1.1);
-}
-
-.arrow {
-  margin-right: 82px;
+  color: #292b2c !important;
+  background-color: #f0ad4e;
+  box-shadow: 0px 0px 10px #00000064;
 }
