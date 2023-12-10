@@ -1,11 +1,24 @@
 /* This file is only used in index.html page */
-/* I've removed div {width: 1245px;} because it ruined the navbar D: */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  box-shadow: 0px 2px 5px #0000004b;
+}
+
+.dropdown-toggle {
+  font-weight: 800;
+}
+
+.logo {
+  width: 5%;
+  height: 5%;
+}
 
 .mission-vision {
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 78px;
+  margin-top: 15vh;
 }
 
 .mission-vision .subtitle {
@@ -16,7 +29,7 @@
 }
 
 .vstup_rectangle {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   height: 118px;
@@ -100,7 +113,7 @@
 
 .vstup_rectangle .text {
   color: white;
-  font-size: 32px;
+  font-size: 1.5em;
   font-weight: 600;
   margin: 0;
   margin-left: 59px;
@@ -110,11 +123,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 20vw;
   height: 57px;
   color: black;
-  font-size: 20px;
-  font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: white;
@@ -143,10 +155,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   background: #57aeff;
-  width: 757px;
-  border-radius: 0;
+  width: 75vh;
 }
 
 .slide_info .text {
@@ -176,7 +186,8 @@
 footer {
   font-family: "Montserrat Medium";
   width: 100%;
-  height: 90vh;
+  height: 100%;
+  min-height: 100vh;
   background: rgb(87, 174, 255);
   background: linear-gradient(
     317deg,
@@ -194,7 +205,8 @@ footer {
 
 #footer-form {
   width: 40%;
-  height: 80vh;
+  height: 100vh;
+  min-height: 80vh;
   user-select: none;
   border: 3px solid #fff;
   border-radius: 5%;
@@ -210,12 +222,6 @@ footer {
   flex-direction: column;
   padding: 1%;
   margin-top: 1%;
-}
-
-.container {
-  all: unset;
-  display: flex;
-  flex-direction: column;
 }
 
 .row {
@@ -271,6 +277,11 @@ footer {
   background-color: #fbed00;
 }
 
+.text-animation {
+  font-size: 2em;
+  margin-left: 1vw;
+}
+
 #gfg ul li:hover {
   background: hsl(230, 100%, 86%);
 }
@@ -286,16 +297,6 @@ footer {
   margin: 0;
   margin-top: 1vh;
   animation: fade 0.5s ease-in-out;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 #addresses ul {
@@ -349,4 +350,148 @@ footer {
 
 .arrow {
   margin-right: 82px;
+}
+
+@media screen and (max-width: 1782px) {
+  ::-webkit-scrollbar {display: none;}
+
+  .logo {
+    width: 10%;
+    height: 10%;
+  }
+
+  nav a, nav .btn {
+    font-size: 1.5rem;
+  }
+
+  .mission-vision {
+    padding: 1%;
+    text-align: center;
+  }
+
+  .navbar-collapse .btn[type="submit"] {
+    width: 30vw!important;
+  }
+
+  footer {
+    padding: 5%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #footer-form, #footer-contacts {
+    width: 100%;
+    margin: 0;
+  }
+
+  #footer-form {
+    height: 100%;
+  }
+
+  #footer-contacts .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer-contacts .container .col button {
+    font-size: 3rem;
+    width: 12.5vw;
+    height: 10vh;
+  }
+
+}
+
+@media screen and (max-width: 1600px) {
+  .fill_form {
+    width: 30vw;
+  }
+
+  .slide_info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80vh;
+  }
+
+  .slide_info .text {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .rectangle_blue img {
+    left: 35%;
+  }
+
+  .rectangle_blue {
+    width: 100vw;
+    padding: 2%;
+  }
+
+  .rectangle_blue, .slide_info .image {
+    height: auto;
+  }
+
+  .lightning {
+    top: 130%;
+    left: 35%;
+  }
+
+  .group-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel, .accordion {
+    width: 90vw!important;
+  }
+
+  #reviews {
+    height: 80vh!important;
+  }
+
+  .mission-vision .subtitle {
+    text-align: center;
+    font-size: 3em;
+  }  
+}
+
+@media screen and (max-width: 1130px) {
+
+  .navbar-toggler {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  #navbar-toggler {
+    font-size: 3rem;
+  }
+
+  .navbar-collapse {
+    min-height: 100vh;
+    height: 100vh;
+  } 
+
+  .navbar-collapse .btn[type="submit"] {
+      width: 100vw!important;
+  }
+
+  .navbar-collapse a, .navbar-collapse button {
+    font-size: 2rem;
+  }  
+
+
+
+  #admission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .fill-form {
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    margin: 0% 1%; 
+  }
 }
