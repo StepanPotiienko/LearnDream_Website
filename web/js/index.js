@@ -1,3 +1,6 @@
+var Scrollbar = window.Scrollbar
+const options = { "damping": .06, "autoScrollbarTrack": true, }
+Scrollbar.init(document.querySelector('#smooth-scroll', options), { syncCallbacks: true });
 
 const AddTextToMarqueeTextBlock = () => {
     const textBlocks = document.getElementsByClassName("marquee-animation-text-block")
@@ -9,9 +12,9 @@ const AddTextToMarqueeTextBlock = () => {
         const color = j % 2 == 0 ? "blue" : "yellow"
 
         if (i % 2 == 0) {
-            textBlocks[j].innerHTML += `<span class="text-accent-${color} text-animation">Додаткова освіта</span>`
+            textBlocks[j].innerHTML += `<span class="text-accent-${color} text-animation"> Додаткова освіта</span>`
         } else {
-            textBlocks[j].innerHTML += `<span class="text-animation">Додаткова освіта</span>`
+            textBlocks[j].innerHTML += `<span span class="text-animation">Додаткова освіта</span>`
         }
     }
 
