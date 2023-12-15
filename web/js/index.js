@@ -1,12 +1,20 @@
 var Scrollbar = window.Scrollbar
 const options = { "damping": .06, "autoScrollbarTrack": true, }
-Scrollbar.init(document.querySelector('#smooth-scroll', options), { syncCallbacks: true });
+Scrollbar.init(document.querySelector('#smooth-scroll', options), {
+    syncCallbacks: true, plugins: {
+        disableScroll: {
+            direction: 'x',
+        }
+    }
+});
+
+scrollbar.track.xAxis.element.remove()
 
 const AddTextToMarqueeTextBlock = () => {
     const textBlocks = document.getElementsByClassName("marquee-animation-text-block")
 
     // Required text parts to fill up the width of the page.
-    const textParts = 40
+    const textParts = 80
 
     const PlaceText = (j, i) => {
         const color = j % 2 == 0 ? "blue" : "yellow"
@@ -29,6 +37,10 @@ const AddTextToMarqueeTextBlock = () => {
             }
         }
     }
+}
+
+const ScrollFadeAnimation = () => {
+    // TODO: Blocks smoothly appear out of left side of the screen on scroll
 }
 
 const ChangePanda = () => {
