@@ -30,10 +30,6 @@ header {
   height: 100vh;
 }
 
-.svg-full {
-  overflow-x: hidden;
-}
-
 .marquee-animation-text-block {
   margin: 0;
   padding: 0;

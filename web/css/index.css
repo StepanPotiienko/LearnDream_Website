@@ -18,6 +18,14 @@ header {
   border: none;
 }
 
+.nav-item {
+  margin-left: 3%;
+}
+
+.collapse .btn-warning {
+  margin-left: 5%;
+}
+
 .mission-vision {
   padding: 3%;
   text-align: center;
@@ -452,7 +460,32 @@ footer {
   }  
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.animation-show {
+  filter: blur(0px);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 @media screen and (max-width: 1130px) {
+  #svg-full, .marquee-animation-text-block {
+    display: none;
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
 
   .navbar-toggler {
     width: 10vh;
