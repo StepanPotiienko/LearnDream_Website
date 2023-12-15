@@ -29,3 +29,33 @@
     font-family: "Montserrat Medium Italic";
     src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-MediumItalic.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat Alternates Regular";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Bold";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Bold Italic";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Italic";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Medium";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates Medium Italic";
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-MediumItalic.ttf");
+}
