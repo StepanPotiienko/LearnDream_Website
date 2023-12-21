@@ -1,9 +1,5 @@
 /* This file is for adding and modifying fonts */
 
-@font-face {
-    font-family: "Montserrat Alternates";
-    src: url("../fonts/Montserrat\ Alternates/MontserratAlternates-Regular.ttf");
-}
 
 @font-face {
     font-family: "Montserrat Regular";

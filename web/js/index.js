@@ -1,5 +1,6 @@
 const Scrollbar = window.Scrollbar
 const options = { "damping": .06, "autoScrollbarTrack": true, }
+
 Scrollbar.init(document.querySelector('#smooth-scroll', options), {
     syncCallbacks: true, plugins: {
         disableScroll: {
@@ -43,7 +44,6 @@ const AddTextToMarqueeTextBlock = () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
 
         if (entry.isIntersecting) {
             entry.target.classList.add("animation-show")
@@ -53,8 +53,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden")
 hiddenElements.forEach((el) => observer.observe(el))
-
-
 
 const ChangePanda = () => {
     //TODO: Image of Panda changes randomly after every reload
