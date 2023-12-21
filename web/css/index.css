@@ -1,23 +1,5 @@
 /* This file is only used in index.html page */
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
-  box-shadow: 0px 2px 5px #0000004b;
-}
-
-.logo {
-  width: 5%;
-  height: 5%;
-}
-
-.collapse .btn-warning {
-  background-color: #FCE731;
-  border: none;
-}
-
 .mission-vision {
   padding: 3%;
   text-align: center;
@@ -32,19 +14,16 @@ header {
 }
 
 .vstup_rectangle {
-  width: 80%;
+  width: 80vw;
   margin: 10%;
-  height: 118px;
+  height: 11.8vh;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 #admission {
   color: #000;
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
   text-align: center;
   margin-top: 100px;
   text-transform: uppercase;
@@ -52,24 +31,20 @@ header {
 
 .text-accent {
   color: #57aeff;
-  text-align: justify;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .group-row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90vw;
+  width: 95vw;
   gap: 1vw;
-  margin: auto;
 }
 
 #accordionExample {
-  width: 50vw;
+  width: 40vw;
 }
 
 #carouselExample {
@@ -78,7 +53,6 @@ header {
 
 #reviews {
   width: 100%;
-  min-height: 15vh;
   height: 30vh;
   max-height: 30vh;
 }
@@ -102,23 +76,21 @@ header {
   align-items: center;
   flex-direction: row;
   margin: 0 auto;
-  margin-top: 50px;
-  height: 118px;
+  margin-top: 5vh;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 .image {
   height: 100px;
   width: 100px;
-  margin-left: 28px;
+  margin-left: 3vw;
 }
 
 .vstup_rectangle .text {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
-  margin: 0;
-  margin-left: 59px;
+  margin: 0 2vw;
 }
 
 .fill_form {
@@ -126,19 +98,19 @@ header {
   align-items: center;
   justify-content: center;
   width: 20vw;
-  height: 57px;
+  height: 6vh;
   color: black;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: white;
   border-radius: 25px;
   margin-left: auto;
-  margin-right: 82px;
-  transition: 0.5s;
+  margin-right: 4vw;
+  transition: 0.25s;
 }
 
 .fill_form:hover {
+  text-decoration: none;
   background-color: transparent;
   color: #fff;
 }
@@ -186,7 +158,6 @@ header {
 }
 
 footer {
-  font-family: "Montserrat Medium";
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -230,6 +201,7 @@ footer {
   gap: 1vh;
   margin-top: 1vh;
 }
+
 .col {
   all: unset;
 }
@@ -384,6 +356,7 @@ footer {
 
   #footer-form {
     height: 100%;
+    border-radius: 0;
   }
 
   #footer-contacts .container {
@@ -407,7 +380,6 @@ footer {
   .slide_info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 80vh;
   }
 
   .slide_info .text {
@@ -436,6 +408,8 @@ footer {
   .group-row {
     display: flex;
     flex-direction: column;
+    gap: 5vh;
+    margin-top: 60vh;
   }
 
   .carousel, .accordion {
@@ -453,6 +427,12 @@ footer {
 }
 
 @media screen and (max-width: 1130px) {
+  #svg-full, .marquee-animation-text-block {
+    display: none;
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
 
   .navbar-toggler {
     width: 10vh;
@@ -467,6 +447,14 @@ footer {
     min-height: 100vh;
     height: 100vh;
   } 
+
+  #addresses iframe {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
 
   .navbar-collapse .btn[type="submit"] {
       width: 100vw!important;
@@ -500,5 +488,11 @@ footer {
     font-size: 1em;
     width: 100%;
     margin: 0% 1%; 
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .col button {
+    width: 80vw;
   }
 }

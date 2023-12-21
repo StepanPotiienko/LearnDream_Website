@@ -25,7 +25,7 @@
           <i class="bi bi-list" id="navbar-toggler"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="./index.html">
             <picture>
               <source src="./web/images/icons/logo.png" class="logo" />
               <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
@@ -42,7 +42,7 @@
                   <li>
                     <a class="dropdown-item" href="#">Команда (персонал)</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Інфраструктура</a></li>
+                  <li><a class="dropdown-item" href="./infrastructure.html">Інфраструктура</a></li>
                   <li><a class="dropdown-item" href="#">Наша історія</a></li>
                   <li><a class="dropdown-item" href="#">Вакансії</a></li>
                 </ul>
@@ -100,7 +100,7 @@
     </nav>
   </header>
   <div id="smooth-scroll">
-    <div class="mission-vision">
+    <div class="mission-vision hidden">
       <p class="subtitle text-accent text-center">Місія</p>
       <p class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum erat
@@ -123,11 +123,11 @@
       </p>
     </div>
 
-    <p class="subtitle" id="admission">
+    <p class="subtitle hidden" id="admission">
       <span class="text-accent">Вступ</span> до школи
     </p>
 
-    <div class="vstup_rectangle">
+    <div class="vstup_rectangle hidden">
       <img src="./web/images/icons/board.png" alt="" class="image" />
       <p class="text">1 клас</p>
       <a href="" class="fill_form bold-400">Заповнити анкету</a>
@@ -138,7 +138,7 @@
       </svg>
     </div>
 
-    <div class="vstup_rectangle">
+    <div class="vstup_rectangle hidden">
       <img src="./web/images/icons/books.png" alt="" class="image" />
       <p class="text">2-4 класи</p>
       <a href="" class="fill_form bold-400">Заповнити анкету</a>
@@ -149,7 +149,7 @@
       </svg>
     </div>
 
-    <div class="vstup_rectangle">
+    <div class="vstup_rectangle hidden">
       <img src="./web/images/icons/atom.png" alt="" class="image" />
       <p class="text">5-8 клас</p>
       <a href="" class="fill_form bold-400">Заповнити анкету</a>
@@ -167,14 +167,14 @@
             align-items: center;
             padding-top: 3%;
             padding-bottom: 8%;
-          ">
+          " class="hidden">
       <button class="btn btn-lg rounded-pill btn-warning text-uppercase"
         style="transform: scale(1.5); margin-top: 5vh; background-color: #FCE731; border: none;">
         Детальніше
       </button>
     </div>
 
-    <div class="slide_info">
+    <div class="slide_info hidden">
       <div class="rectangle_blue">
         <img src="./web/images/vector_lightning2.png" alt="" />
         <p class="text" align="left">
@@ -183,17 +183,17 @@
           результатів у майбутньому.
         </p>
       </div>
-      <div class="image"><img src="./web/images/icons/kids.png" alt="" /></div>
+      <div class="image hidden"><img src="./web/images/icons/kids.png" alt="" /></div>
       <img src="./web/images/vector_lightning1.png" alt="" class="lightning" />
     </div>
 
-    <div class="svg-full">
+    <div class="svg-full hidden">
       <p class="marquee-animation-text-block"></p>
       <p class="marquee-animation-text-block"></p>
       <p class="marquee-animation-text-block"></p>
     </div>
 
-    <div id="additional_education" class="m-3">
+    <div id="additional_education" class="m-3 hidden">
       <div class="group-row">
         <div id="blocks">
           <div class="accordion" id="accordionExample">
@@ -239,7 +239,7 @@
           </div>
         </div>
 
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExample" class="carousel slide hidden" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
               class="active carousel-indicator" aria-current="true" aria-label="Slide 1"></button>
@@ -277,7 +277,7 @@
       </div>
     </div>
 
-    <div id="reviews" class="d-flex flex-column container container-fluid p-3">
+    <div id="reviews" class="d-flex flex-column container container-fluid p-3 hidden">
       <h2 class="text-center bold subtitle">Які <span class="text-accent">відгуки</span> про нас залишають?</h2>
       <div id="text-carousel" class="carousel slide mt-3" data-ride="carousel">
         <div class="carousel-inner">
@@ -315,7 +315,7 @@
       </div>
     </div>
 
-    <div id="schools">
+    <div id="schools" class="hidden">
       <h2 class="bold text-lg text-center subtitle">
         Наші <span class="text-accent">заклади</span>
       </h2>
@@ -335,7 +335,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="hidden">
       <div id="footer-form">
         <form action="./" method="POST">
           <h2 class="text-uppercase text-center text-warning">
