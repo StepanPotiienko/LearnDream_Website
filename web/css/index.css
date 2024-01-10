@@ -117,12 +117,9 @@
 
 .slide_info {
   display: flex;
-  position: relative;
-  width: 1442px;
-  height: 817px;
+  width: 140vw;
+  height: 80vh;
   margin: 0 auto;
-  margin-top: 51px;
-  margin-bottom: 100px;
 }
 
 .rectangle_blue {
@@ -130,7 +127,7 @@
   align-items: center;
   justify-content: center;
   background: #57aeff;
-  width: 75vh;
+  width: 60vh;
 }
 
 .slide_info .text {
@@ -144,6 +141,10 @@
   margin: 0;
 }
 
+.slide_info .image img {
+  height: 80vh;
+}
+
 .rectangle_blue img {
   position: absolute;
   top: 0;
@@ -152,7 +153,7 @@
 
 .lightning {
   position: absolute;
-  left: 50%;
+  left: 70%;
   transform: translate(-50%, 0%);
   bottom: 0%;
 }
@@ -373,6 +374,11 @@ footer {
 }
 
 @media screen and (max-width: 1600px) {
+  #info {
+    margin-left: 0!important;
+    margin-bottom: 80vh;
+  }
+  
   .fill_form {
     width: 30vw;
   }
@@ -380,7 +386,15 @@ footer {
   .slide_info {
     display: flex;
     flex-direction: column;
+    height: 30vh;
   }
+
+  .image img {
+    width: 100vw;
+  }
+
+  .slide_info .image img {height: 80vh;}
+
 
   .slide_info .text {
     width: 100vw;
@@ -388,28 +402,29 @@ footer {
   }
 
   .rectangle_blue img {
-    left: 35%;
+    left: 72%;
   }
 
   .rectangle_blue {
     width: 100vw;
-    padding: 2%;
+    height: 100vh;
+    padding: 5%;
   }
 
   .rectangle_blue, .slide_info .image {
-    height: auto;
+    height: 100;
   }
 
   .lightning {
-    top: 130%;
-    left: 35%;
+    top: 350%;
+    left: 78%;
   }
 
   .group-row {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    margin-top: 60vh;
+    margin-top: 30vh;
   }
 
   .carousel, .accordion {
@@ -457,7 +472,7 @@ footer {
   }
 
   .navbar-collapse .btn[type="submit"] {
-      width: 100vw!important;
+      width: 85vw!important;
   }
 
   .navbar-collapse a, .navbar-collapse button {
