@@ -78,11 +78,11 @@ header {
   width: 100%;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 12s alternate infinite;
+  animation: marquee 60s infinite;
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
+  from { transform: translateX(0%); }
   to { transform: translateX(-100%); }
 }
 
