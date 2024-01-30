@@ -1,24 +1,9 @@
 /* This file is only used in index.html page */
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
-  box-shadow: 0px 2px 5px #0000004b;
-}
-
-.dropdown-toggle {
-  font-weight: 800;
-}
-
-.logo {
-  width: 5%;
-  height: 5%;
-}
-
 .mission-vision {
-  margin-top: 15vh;
+  padding: 3%;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .mission-vision .subtitle {
@@ -29,20 +14,16 @@ header {
 }
 
 .vstup_rectangle {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  height: 118px;
+  width: 80vw;
+  margin: 10%;
+  height: 11.8vh;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 #admission {
   color: #000;
-  font-family: "Montserrat Regular", sans-serif;
-  font-size: 36px;
-  font-style: normal;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
   text-align: center;
   margin-top: 100px;
   text-transform: uppercase;
@@ -50,24 +31,20 @@ header {
 
 .text-accent {
   color: #57aeff;
-  text-align: justify;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .group-row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90vw;
+  width: 95vw;
   gap: 1vw;
-  margin: auto;
 }
 
 #accordionExample {
-  width: 50vw;
+  width: 40vw;
 }
 
 #carouselExample {
@@ -76,7 +53,6 @@ header {
 
 #reviews {
   width: 100%;
-  min-height: 15vh;
   height: 30vh;
   max-height: 30vh;
 }
@@ -100,23 +76,21 @@ header {
   align-items: center;
   flex-direction: row;
   margin: 0 auto;
-  margin-top: 50px;
-  height: 118px;
+  margin-top: 5vh;
   background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
 }
 
 .image {
   height: 100px;
   width: 100px;
-  margin-left: 28px;
+  margin-left: 3vw;
 }
 
 .vstup_rectangle .text {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
-  margin: 0;
-  margin-left: 59px;
+  margin: 0 2vw;
 }
 
 .fill_form {
@@ -124,31 +98,28 @@ header {
   align-items: center;
   justify-content: center;
   width: 20vw;
-  height: 57px;
+  height: 6vh;
   color: black;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: white;
   border-radius: 25px;
   margin-left: auto;
-  margin-right: 82px;
-  transition: 0.5s;
+  margin-right: 4vw;
+  transition: 0.25s;
 }
 
 .fill_form:hover {
+  text-decoration: none;
   background-color: transparent;
   color: #fff;
 }
 
 .slide_info {
   display: flex;
-  position: relative;
-  width: 1442px;
-  height: 817px;
+  width: 140vw;
+  height: 80vh;
   margin: 0 auto;
-  margin-top: 51px;
-  margin-bottom: 100px;
 }
 
 .rectangle_blue {
@@ -156,7 +127,7 @@ header {
   align-items: center;
   justify-content: center;
   background: #57aeff;
-  width: 75vh;
+  width: 60vh;
 }
 
 .slide_info .text {
@@ -170,6 +141,10 @@ header {
   margin: 0;
 }
 
+.slide_info .image img {
+  height: 80vh;
+}
+
 .rectangle_blue img {
   position: absolute;
   top: 0;
@@ -178,25 +153,20 @@ header {
 
 .lightning {
   position: absolute;
-  left: 50%;
+  left: 70%;
   transform: translate(-50%, 0%);
   bottom: 0%;
 }
 
 footer {
-  font-family: "Montserrat Medium";
   width: 100%;
   height: 100%;
   min-height: 100vh;
   background: rgb(87, 174, 255);
-  background: linear-gradient(
-    317deg,
-    rgba(87, 174, 255, 1) 0%,
-    rgba(0, 209, 255, 1) 33%,
-    rgba(20, 0, 255, 1) 71%,
-    rgba(2, 0, 26, 1) 97%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-image: url("../images/footer.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -232,6 +202,7 @@ footer {
   gap: 1vh;
   margin-top: 1vh;
 }
+
 .col {
   all: unset;
 }
@@ -241,7 +212,7 @@ footer {
   cursor: pointer;
   width: 4vh;
   height: 4vh;
-  background-color: #f0ad4e;
+  background-color: #FCE731;
   border-radius: 25%;
   text-align: center;
   font-size: 1rem;
@@ -250,7 +221,7 @@ footer {
 
 .col button:hover {
   color: whitesmoke;
-  background-color: #f0c180;
+  transform: scale(1.05);
 }
 
 #schools {
@@ -386,6 +357,7 @@ footer {
 
   #footer-form {
     height: 100%;
+    border-radius: 0;
   }
 
   #footer-contacts .container {
@@ -402,6 +374,11 @@ footer {
 }
 
 @media screen and (max-width: 1600px) {
+  #info {
+    margin-left: 0!important;
+    margin-bottom: 80vh;
+  }
+  
   .fill_form {
     width: 30vw;
   }
@@ -409,8 +386,15 @@ footer {
   .slide_info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 80vh;
+    height: 30vh;
   }
+
+  .image img {
+    width: 100vw;
+  }
+
+  .slide_info .image img {height: 80vh;}
+
 
   .slide_info .text {
     width: 100vw;
@@ -418,26 +402,29 @@ footer {
   }
 
   .rectangle_blue img {
-    left: 35%;
+    left: 72%;
   }
 
   .rectangle_blue {
     width: 100vw;
-    padding: 2%;
+    height: 100vh;
+    padding: 5%;
   }
 
   .rectangle_blue, .slide_info .image {
-    height: auto;
+    height: 100;
   }
 
   .lightning {
-    top: 130%;
-    left: 35%;
+    top: 350%;
+    left: 78%;
   }
 
   .group-row {
     display: flex;
     flex-direction: column;
+    gap: 5vh;
+    margin-top: 30vh;
   }
 
   .carousel, .accordion {
@@ -455,6 +442,12 @@ footer {
 }
 
 @media screen and (max-width: 1130px) {
+  #svg-full, .marquee-animation-text-block {
+    display: none;
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
 
   .navbar-toggler {
     width: 10vh;
@@ -470,15 +463,25 @@ footer {
     height: 100vh;
   } 
 
+  #addresses iframe {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
   .navbar-collapse .btn[type="submit"] {
-      width: 100vw!important;
+      width: 85vw!important;
   }
 
   .navbar-collapse a, .navbar-collapse button {
     font-size: 2rem;
   }  
 
-
+  .vstup_rectangle {
+    width: 100%;
+  }
 
   #admission {
     width: 100%;
@@ -487,11 +490,24 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-  
+
+  #reviews {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .fill-form {
     text-align: center;
     font-size: 1em;
     width: 100%;
     margin: 0% 1%; 
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .col button {
+    width: 80vw;
   }
 }

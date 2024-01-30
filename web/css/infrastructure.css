@@ -26,14 +26,14 @@
     width: 48%;
 }
 
-.modernclasses {
+.paragraph {
     text-align: center;
     width: 50%;
     margin: 0 auto;
     margin-top: 70px;
 }
 
-.modern_title {
+.paragraph_title {
     color: #57AEFF;
     font-size: 48px;
     font-family: "Montserrat Alternates Bold";
@@ -41,22 +41,50 @@
     word-wrap: break-word;
 }
 
-.modern_text {
+.paragraph_text {
     color: black;
     font-size: 32px;
     font-family: "Montserrat Alternates Regular";
     font-weight: 400;
     word-wrap: break-word;
     text-align: left;
+    padding: 15px;
+}
+
+.tablica {
+    margin: auto;
+    margin-top: 70px;
+    max-width: 50%;
 }
 
 .grid {
-    margin: 0 auto;
-    margin-top: 70px;
-    width: 740px;
+    width: 50%;
+    margin: auto;
 }
 
 .grid img {
-    height: 355px;
-    padding: 15px
+    height: 500px;
+    padding: 15px;
+    transition: 1s;
+}
+
+.grid img:hover {
+    transform: scale(1.5);
+}
+
+.vstavka {
+    font-family: "Montserrat Alternates Regular";
+    font-size: 32px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 30px;
+    margin: 50px 0 50px 0;
+}
+
+#underTable {
+    margin-top: 200px;
+}
+
+#footer {
+    margin-top: 500px;
 }
