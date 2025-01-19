@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +28,6 @@ header {
   width: 100vw;
   z-index: 1;
   box-shadow: 0px 2px 5px #0000004b;
-  font-family: "Montserrat Alternates Regular", sans-serif;
 }
 
 .logo {
@@ -36,7 +36,7 @@ header {
 }
 
 .collapse .btn-warning {
-  background-color: #FCE731;
+  background-color: #fce731;
   border: none;
 }
 
@@ -66,7 +66,7 @@ header {
   opacity: 1;
 }
 
-@media(prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
   .hidden {
     transition: none;
   }
@@ -78,12 +78,16 @@ header {
   width: 100%;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 12s alternate infinite;
+  animation: marquee 32s linear infinite;
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 noscript {
@@ -116,7 +120,7 @@ iframe {
 }
 
 .text-accent-yellow {
-  color: #FCE731;
+  color: #fce731;
 }
 
 .carousel-indicator {
