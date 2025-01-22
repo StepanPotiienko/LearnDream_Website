@@ -211,7 +211,7 @@ footer {
   cursor: pointer;
   width: 4vh;
   height: 4vh;
-  background-color: #FCE731;
+  background-color: #fce731;
   border-radius: 25%;
   text-align: center;
   font-size: 1rem;
@@ -236,11 +236,22 @@ footer {
   all: unset;
   user-select: none;
   cursor: pointer;
-  border: 1px solid black;
   background: #b8ddff;
   padding: 1vh;
   transition: 0.5s;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+}
+
+.ui-tabs-panel {
+  width: 100%;
+  min-width: 30vw;
+  max-width: 40vw;
+
+  height: 100%;
+  min-height: 30vh;
+  max-height: 40vh;
+
+  border: 2px solid #000;
 }
 
 #gfg ul .ui-state-active {
@@ -267,6 +278,18 @@ footer {
   margin: 0;
   margin-top: 1vh;
   animation: fade 0.5s ease-in-out;
+}
+
+#gfg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gfg1 span {
+  font-size: 4rem;
+  color: var(--yellow);
+  -webkit-text-stroke: 1px darkblue;
 }
 
 #addresses ul {
@@ -323,14 +346,17 @@ footer {
 }
 
 @media screen and (max-width: 1782px) {
-  ::-webkit-scrollbar {display: none;}
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   .logo {
     width: 10%;
     height: 10%;
   }
 
-  nav a, nav .btn {
+  nav a,
+  nav .btn {
     font-size: 1.5rem;
   }
 
@@ -340,7 +366,7 @@ footer {
   }
 
   .navbar-collapse .btn[type="submit"] {
-    width: 30vw!important;
+    width: 30vw !important;
   }
 
   footer {
@@ -349,7 +375,8 @@ footer {
     justify-content: center;
   }
 
-  #footer-form, #footer-contacts {
+  #footer-form,
+  #footer-contacts {
     width: 100%;
     margin: 0;
   }
@@ -369,7 +396,6 @@ footer {
     width: 12.5vw;
     height: 10vh;
   }
-
 }
 
 @media screen and (max-width: 1600px) {
@@ -396,7 +422,8 @@ footer {
     padding: 2%;
   }
 
-  .rectangle_blue, .slide_info .image {
+  .rectangle_blue,
+  .slide_info .image {
     height: auto;
   }
 
@@ -412,22 +439,24 @@ footer {
     margin-top: 60vh;
   }
 
-  .carousel, .accordion {
-    width: 90vw!important;
+  .carousel,
+  .accordion {
+    width: 90vw !important;
   }
 
   #reviews {
-    height: 80vh!important;
+    height: 80vh !important;
   }
 
   .mission-vision .subtitle {
     text-align: center;
     font-size: 3em;
-  }  
+  }
 }
 
 @media screen and (max-width: 1130px) {
-  #svg-full, .marquee-animation-text-block {
+  #svg-full,
+  .marquee-animation-text-block {
     display: none;
     visibility: hidden;
     width: 0%;
@@ -446,7 +475,7 @@ footer {
   .navbar-collapse {
     min-height: 100vh;
     height: 100vh;
-  } 
+  }
 
   #addresses iframe {
     display: none;
@@ -457,12 +486,13 @@ footer {
   }
 
   .navbar-collapse .btn[type="submit"] {
-      width: 100vw!important;
+    width: 100vw !important;
   }
 
-  .navbar-collapse a, .navbar-collapse button {
+  .navbar-collapse a,
+  .navbar-collapse button {
     font-size: 2rem;
-  }  
+  }
 
   .vstup_rectangle {
     width: 100%;
@@ -487,7 +517,7 @@ footer {
     text-align: center;
     font-size: 1em;
     width: 100%;
-    margin: 0% 1%; 
+    margin: 0% 1%;
   }
 }
 
