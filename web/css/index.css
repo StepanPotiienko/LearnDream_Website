@@ -1,9 +1,26 @@
 /* This file is only used in index.html page */
 
+#brief-introduction {
+  width: 100vw;
+  min-width: 100vw;
+
+  height: 100vh;
+  min-height: 100vh;
+}
+
+#brief-introduction .image {
+  width: 50%;
+  min-width: 50vw;
+}
+
+#brief-introduction .content {
+  width: auto;
+  max-width: 50%;
+}
+
 .mission-vision {
   padding: 3%;
   text-align: center;
-  margin-top: 10vh;
 }
 
 .mission-vision .subtitle {
