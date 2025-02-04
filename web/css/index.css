@@ -16,6 +16,20 @@
 #brief-introduction .content {
   width: auto;
   max-width: 50%;
+
+  gap: 5vh;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.column {
+  display: flex;
+  gap: 2vh;
+  font-size: 1.3rem;
 }
 
 .mission-vision {
