@@ -1,32 +1,26 @@
 .infrastruktura {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
     font-size: 100px;
-    font-family: "Montserrat Alternates Bold";
     font-weight: 700;
     letter-spacing: 15px;
     text-align: center;
-    margin-top: 359px;
-}
-
-.infrast {
-    color: black;
-    padding: 0;
-}
-
-.ruktura {
-    color: #57AEFF;
-    font-size: 100px;
-    font-family: "Montserrat Alternates Bold";
-    font-weight: 700;
-    letter-spacing: 15px;
-    word-wrap: break-word
+    background-image: url("../images/photos/фото-9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
 }
 
 .classroom {
     width: 48%;
 }
 
-.modernclasses {
+.center-text {
     text-align: center;
     width: 50%;
     margin: 0 auto;
