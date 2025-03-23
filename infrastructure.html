@@ -20,7 +20,7 @@
 <body>
   <noscript>Для стабільної роботи сайту, ввімкніть, будь ласка, JavaScript!</noscript>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -28,12 +28,14 @@
           <i class="bi bi-list" id="navbar-toggler"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="./index.html">
-            <picture>
-              <source src="./web/images/icons/logo.png" class="logo" />
-              <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
-            </picture>
-          </a>
+          <div class="flex-row h-100">
+            <a href="./index.html" class="logo h-100 w-100">
+              <picture>
+                <source src="./web/images/icons/logo.png" class="logo" />
+                <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
+              </picture>
+            </a>
+          </div>
           <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
             <li class="nav-item">
               <div class="dropdown">
@@ -45,7 +47,7 @@
                   <li>
                     <a class="dropdown-item" href="#">Команда (персонал)</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Інфраструктура</a></li>
+                  <li><a class="dropdown-item" href="./infrastructure.html">Інфраструктура</a></li>
                   <li><a class="dropdown-item" href="#">Наша історія</a></li>
                   <li><a class="dropdown-item" href="#">Вакансії</a></li>
                 </ul>
@@ -95,7 +97,7 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-warning rounded-pill w-25" type="submit">
+          <button class="btn btn-warning rounded-pill" type="submit">
             Зв'язатися з нами
           </button>
         </div>
@@ -103,9 +105,14 @@
     </nav>
   </header>
   <div id="smooth-scroll">
-    <div class="head hidden">
-      <div class="infrastruktura text-white">
-        <span>ІНФРАСТРУКТУРА</span>
+    <div class="head hidden vh-100">
+      <div class="infrastruktura text-white flex-column align-content-between justify-content-between h-100">
+        <div class="flex-column align-items-center justify-content-center h-100 d-flex">
+          <span>ІНФРАСТРУКТУРА</span>
+        </div>
+        <div class=" arrow-down w-100 d-flex justify-content-center">
+          <i class="bi bi-arrow-down 5rem"></i>
+        </div>
       </div>
     </div>
 
@@ -113,9 +120,12 @@
       <p class="modern_title">
         Сучасні класи
       </p>
-      <p class="modern_text">В Learn&Dream School ми прагнемо створити ідеальне середовище для розвитку кожної дитини, і
-        наші класи, орієнтовані на методику Монтессорі, втілюють це прагнення в кожному аспекті. Інфраструктура наших
-        класів спеціально адаптована для відповіді на потреби розвитку дитини та стимулювання його активного навчання.
+      <p class="modern_text">
+        Ми створюємо навчальне середовище, де методика Монтессорі реалізується в кожній деталі. Тут кожна дитина має
+        можливість обирати власний шлях у пізнанні світу завдяки ретельно підібраним навчальним матеріалам та
+        організації простору.
+        Наш підхід спрямований на розвиток самостійності та підтримку природної цікавості, що забезпечує міцну основу
+        для подальшого зростання.
       </p>
     </div>
 

@@ -377,20 +377,6 @@ footer {
 }
 
 @media screen and (max-width: 1782px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  .logo {
-    width: 10%;
-    height: 10%;
-  }
-
-  nav a,
-  nav .btn {
-    font-size: 1.5rem;
-  }
-
   .mission-vision {
     padding: 1%;
     text-align: center;
@@ -517,12 +503,7 @@ footer {
   }
 
   .navbar-collapse .btn[type="submit"] {
-    width: 100vw !important;
-  }
-
-  .navbar-collapse a,
-  .navbar-collapse button {
-    font-size: 2rem;
+    width: 80vw !important;
   }
 
   .vstup_rectangle {
