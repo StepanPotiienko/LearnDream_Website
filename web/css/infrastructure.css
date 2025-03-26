@@ -8,13 +8,16 @@
     font-weight: 700;
     letter-spacing: 15px;
     text-align: center;
-    background-image: url("../images/photos/фото-9.jpg");
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+
+    background: linear-gradient(135deg, rgba(123, 126, 207, 0.8), rgba(121, 144, 213, 0.8)), 
+                url("../images/photos/photo-9.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Rubik Spray Paint", system-ui;
-    font-style: normal;
 }
+
 
 .classroom {
     width: 48%;
