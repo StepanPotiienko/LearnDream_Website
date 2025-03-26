@@ -17,7 +17,7 @@
 <body onload="AddTextToMarqueeTextBlock()">
   <noscript>Для стабільної роботи сайту, ввімкніть, будь ласка, JavaScript!</noscript>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -25,12 +25,14 @@
           <i class="bi bi-list" id="navbar-toggler"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="./index.html">
-            <picture>
-              <source src="./web/images/icons/logo.png" class="logo" />
-              <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
-            </picture>
-          </a>
+          <div class="flex-row h-100">
+            <a href="./index.html" class="logo h-100 w-100">
+              <picture>
+                <source src="./web/images/icons/logo.png" class="logo" />
+                <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
+              </picture>
+            </a>
+          </div>
           <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
             <li class="nav-item">
               <div class="dropdown">
@@ -92,17 +94,41 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-warning rounded-pill w-25" type="submit">
+          <button class="btn btn-warning rounded-pill" type="submit">
             Зв'язатися з нами
           </button>
         </div>
       </div>
     </nav>
   </header>
-  <div id="smooth-scroll">
+  <div id="smooth-scroll" class="overflow-x-hidden">
+    <div id="brief-introduction" class="d-flex flex-row justify-content-center align-items-center gap-3 hidden">
+      <div class="image bg-primary"></div>
+      <div class="content d-flex flex-column">
+        <div class="d-flex flex-column w-auto">
+          <span class="title text-accent-blue fs-1 fw-bold text-center">Learn&Dream School</span>
+          <span class="subtitle text-center fs-4">приватна загальноосвітня гімназія</span>
+        </div>
+        <div class="columns flex-row d-flex">
+          <div class="column d-flex flex-column text-center"><span class="text-accent-yellow fw-bold fs-2">??</span> рік
+            роботи</div>
+          <div class="vr"></div>
+          <div class="column d-flex flex-column text-center"><span class="text-accent-yellow fw-bold fs-2">???+</span>
+            щасливих дітей щороку</div>
+          <div class="vr"></div>
+          <div class="column d-flex flex-column text-center"><span class="text-accent-yellow fw-bold fs-2">????+</span>
+            позитивних відгуків</div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 min-vw-100 d-flex justify-content-center align-content-center">
+      <div class="arrow-down">
+        <i class="bi bi-arrow-down fs-1"></i>
+      </div>
+    </div>
     <div class="mission-vision hidden">
-      <p class="subtitle text-accent text-center">Місія</p>
-      <p class="text">
+      <p class="subtitle text-accent text-left">Місія</p>
+      <p class="text-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum erat
         hendrerit mauris interdum volutpat. Morbi nisi orci, accumsan a
         vulputate sagittis, pulvinar at leo. Sed luctus convallis ornare. Aenean
@@ -111,9 +137,9 @@
         congue dignissim eget in lorem. Aenean quis eros
       </p>
 
-      <p class="subtitle text-accent text-center">Візія</p>
+      <p class="subtitle text-accent text-left">Візія</p>
 
-      <p class="text">
+      <p class="text-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum erat
         hendrerit mauris interdum volutpat. Morbi nisi orci, accumsan a
         vulputate sagittis, pulvinar at leo. Sed luctus convallis ornare. Aenean
@@ -174,30 +200,26 @@
       </button>
     </div>
 
-    <div
-      style="margin-top: -20vh; display: flex; justify-content: center; align-items: center; width: 100vw; height: 80vh; text-align: center; margin-left: 15%;"
-      id="info">
-      <div class="slide_info hidden">
-        <div class="rectangle_blue">
-          <img src="./web/images/vector_lightning2.png" alt="" />
-          <p class="text" align="left">
-            В L&D School викладачі завжди створюють надзвичайну атмосферу на
-            уроках. Адже зацікавленість учнів — це головний показник чудових
-            результатів у майбутньому.
-          </p>
-        </div>
-        <div class="image hidden"><img src="./web/images/icons/kids.png" alt="" /></div>
-        <img src="./web/images/vector_lightning1.png" alt="" class="lightning" />
+    <div class="slide_info hidden">
+      <div class="rectangle_blue">
+        <img src="./web/images/vector_lightning2.png" alt="" />
+        <p class="text" align="left">
+          В L&D School викладачі завжди створюють надзвичайну атмосферу на
+          уроках. Адже зацікавленість учнів — це головний показник чудових
+          результатів у майбутньому.
+        </p>
       </div>
+      <div class="image hidden"><img src="./web/images/icons/kids.png" alt="" /></div>
+      <img src="./web/images/vector_lightning1.png" alt="" class="lightning" />
     </div>
 
-    <div class="svg-full hidden">
+    <div class="svg-full hidden overflow-hidden user-select-none">
       <p class="marquee-animation-text-block"></p>
       <p class="marquee-animation-text-block"></p>
       <p class="marquee-animation-text-block"></p>
     </div>
 
-    <div id="additional_education" class="m-3  hidden">
+    <div id="additional_education" class="m-3 hidden">
       <div class="group-row">
         <div id="blocks">
           <div class="accordion" id="accordionExample">
@@ -205,7 +227,7 @@
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="false" aria-controls="collapseOne">
-                  STEM-напрямки
+                  STEM напрямки
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show active" data-bs-parent="#accordionExample">
@@ -330,7 +352,7 @@
         </ul>
 
         <div id="gfg1">
-          Hello World!
+          <span>Coming Soon...</span>
         </div>
 
         <div id="gfg2">

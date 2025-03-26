@@ -20,7 +20,7 @@
 <body>
   <noscript>Для стабільної роботи сайту, ввімкніть, будь ласка, JavaScript!</noscript>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -28,12 +28,14 @@
           <i class="bi bi-list" id="navbar-toggler"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="./index.html">
-            <picture>
-              <source src="./web/images/icons/logo.png" class="logo" />
-              <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
-            </picture>
-          </a>
+          <div class="flex-row h-100">
+            <a href="./index.html" class="logo h-100 w-100">
+              <picture>
+                <source src="./web/images/icons/logo.png" class="logo" />
+                <img src="./web/images/icons/logo.png" class="logo" alt="Логотип компанії Learn & Dream School." />
+              </picture>
+            </a>
+          </div>
           <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
             <li class="nav-item">
               <div class="dropdown">
@@ -45,7 +47,7 @@
                   <li>
                     <a class="dropdown-item" href="#">Команда (персонал)</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Інфраструктура</a></li>
+                  <li><a class="dropdown-item" href="./infrastructure.html">Інфраструктура</a></li>
                   <li><a class="dropdown-item" href="#">Наша історія</a></li>
                   <li><a class="dropdown-item" href="#">Вакансії</a></li>
                 </ul>
@@ -95,7 +97,7 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-warning rounded-pill w-25" type="submit">
+          <button class="btn btn-warning rounded-pill" type="submit">
             Зв'язатися з нами
           </button>
         </div>
@@ -103,75 +105,215 @@
     </nav>
   </header>
   <div id="smooth-scroll">
-    <div class="head hidden">
-      <div class="infrastruktura">
-        <span class="infrast">ІНФРАСТ</span><span class="ruktura">РУКТУРА</span>
+    <div class="head hidden vh-100">
+      <div class="infrastruktura text-white flex-column align-content-between justify-content-between h-100">
+        <div class="flex-column align-items-center justify-content-center h-100 d-flex">
+          <span>ІНФРАСТРУКТУРА</span>
+        </div>
+        <div class=" arrow-down w-100 d-flex justify-content-center">
+          <i class="bi bi-arrow-down 5rem"></i>
+        </div>
       </div>
-      <img src="./web/images/photos/фото-30.jpg" alt="" class="classroom">
     </div>
 
-    <div class="modernclasses">
+    <div class="center-text hidden">
       <p class="modern_title">
         Сучасні класи
       </p>
-      <p class="modern_text">В Learn&Dream School ми прагнемо створити ідеальне середовище для розвитку кожної дитини, і наші класи, орієнтовані на методику Монтессорі, втілюють це прагнення в кожному аспекті. Інфраструктура наших класів спеціально адаптована для відповіді на потреби розвитку дитини та стимулювання його активного навчання.</p>
+      <p class="modern_text">
+        Ми створюємо навчальне середовище, де методика Монтессорі реалізується в кожній деталі. Тут кожна дитина має
+        можливість обирати власний шлях у пізнанні світу завдяки ретельно підібраним навчальним матеріалам та
+        організації простору.
+        Наш підхід спрямований на розвиток самостійності та підтримку природної цікавості, що забезпечує міцну основу
+        для подальшого зростання.
+      </p>
     </div>
 
-    <div class="tablica">
+    <table class="grid hidden">
 
-    <table class="grid">
+      <tr>
+        <th><img src="./web/images/photos/фото-25.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-82.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-25.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-82.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-95.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-31.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-95.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-31.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-4.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-8.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-4.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-8.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-36.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-28.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-36.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-28.jpg" alt=""></th>
-        </tr>
-        
-      </table>
 
-      <p class="vstavka" colspan="2">
-          У наших стінах,  ви знайдете спеціально розроблені навчальні матеріали, які сприяють розвитку рухових та пізнавальних навичок дітей. Меблі та обладнання відповідають принципам безпеки та ергономіки, створюючи комфортне оточення для самостійної діяльності.
+    </table>
+    <div class="center-text hidden">
+      <p class="modern_text text-justify">
+        У навчальних приміщеннях продумано все до найменших дрібниць: яскраві та водночас корисні елементи інтер’єру
+        підтримують інтерес до навчання, а зручні місця для зберігання матеріалів заохочують дітей до самостійності.
       </p>
+    </div>
 
-      <table class="grid">
+    <table class="grid hidden">
 
-        <tr>
-          <th><img src="./web/images/photos/фото-24.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-94.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-24.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-94.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-38.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-39.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-38.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-39.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-35.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-33.jpg" alt=""></th>
-        </tr>
+      <tr>
+        <th><img src="./web/images/photos/фото-35.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-33.jpg" alt=""></th>
+      </tr>
 
-        <tr>
-          <th><img src="./web/images/photos/фото-54.jpg" alt=""></th>
-          <th><img src="./web/images/photos/фото-43.jpg" alt=""></th>
-        </tr>
-        
-      </table>
+      <tr>
+        <th><img src="./web/images/photos/фото-54.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-34.jpg" alt=""></th>
+      </tr>
+    </table>
 
-    
+    <div class="center-text hidden">
+      <p class="modern_title">Комфортне укриття</p>
+      <p class="modern_text">
+        Наше укриття відповідає усім вимогам безпеки та комфорту. Це простір, де діти почуваються захищеними та мають
+        змогу продовжувати навчальний процес навіть у складних обставинах, зберігаючи спокій і впевненість.
+      </p>
+    </div>
+    <table class="grid hidden">
+      <tr>
+        <th><img src="./web/images/photos/фото-3.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото.jpg" alt=""></th>
+      </tr>
+    </table>
+
+    <div class="center-text hidden">
+      <p class="modern_title">Затишна їдальня</p>
+      <p class="modern_text">
+        Їдальня розташована на нульовому поверсі, що забезпечує дітям зручний і безпечний доступ, а також створює
+        спокійну атмосферу для прийому їжі. У меню використовуються лише свіжі та якісні продукти, аби кожна страва була
+        водночас корисною і смачною. Такий підхід допомагає дітям формувати здорові харчові звички та насолоджуватися
+        спілкуванням під час обіду.
+      </p>
+    </div>
+    <table class="grid hidden">
+      <tr>
+        <th><img src="./web/images/photos/фото-6.jpg" alt=""></th>
+        <th><img src="./web/images/photos/photo1-10.jpg" alt=""></th>
+      </tr>
+      <tr>
+        <th><img src="./web/images/photos/photo1-15.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-5.jpg" alt=""></th>
+      </tr>
+    </table>
+
+    <div class="center-text hidden">
+      <p class="modern_title">Зручна переодягальня</p>
+      <p class="modern_text">
+        Кожен учень має власне місце для зберігання речей, що робить переодягання комфортним та організованим. Просторі
+        шафи та зручні місця для сидіння створюють затишну атмосферу, а регулярний догляд за чистотою забезпечує безпеку
+        й приємний вигляд приміщення. Завдяки такому підходу діти швидко й легко готуються до навчання, відчуваючи
+        турботу та порядок.
+      </p>
+    </div>
+    <table class="grid hidden">
+      <tr>
+        <th><img src="./web/images/photos/фото-20.jpg" alt=""></th>
+        <th><img src="./web/images/photos/фото-74.jpg" alt=""></th>
+      </tr>
+    </table>
+    <div class="center-text hidden">
+      <p class="modern_title">Відеоогляд нашої школи</p>
+    </div>
+  </div>
+  <footer class="hidden">
+    <div id="footer-form">
+      <form action="./" method="POST">
+        <h2 class="text-uppercase text-center text-warning">
+          Зворотній зв'язок
+        </h2>
+        <h5 class="text-center">
+          Задайте нам будь-яке питання або поділіться думкою про нашу роботу
+        </h5>
+        <input required type="text" placeholder="Ім'я *" /><br />
+        <input type="text" placeholder="Прізвище" /><br />
+        <input type="phone" placeholder="Телефон" /><br />
+        <input required type="email" placeholder="Email *" /><br />
+        <label for="comment">Коментар</label><br />
+        <textarea name="comment" rows="5"></textarea><br />
+        <div style="
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                ">
+          <button class="text-warning">Відправити</button>
+        </div>
+      </form>
+    </div>
+    <div id="footer-contacts">
+      <h2>Контакти</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button><i class="bi bi-instagram"></i></button>
+          </div>
+          <div class="col">
+            <button><i class="bi bi-facebook"></i></button>
+          </div>
+          <div class="col">
+            <button><i class="bi bi-twitter"></i></button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button><i class="bi bi-whatsapp"></i></button>
+          </div>
+          <div class="col">
+            <button><i class="bi bi-youtube"></i></button>
+          </div>
+          <div class="col">
+            <button><i class="bi bi-snapchat"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="addresses">
+        <ul>
+          <li class="h4">Адреса школи</li>
+          <li class="h4">Електронна адреса школи</li>
+          <li class="h4">Номер телефону 1</li>
+          <li class="h4">Номер телефону 2</li>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.9580599449132!2d33.41192129118685!3d49.080026222301434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d7531e27aa561b%3A0x1127a6238481ac9!2z0LLRg9C70LjRhtGPINCb0ZbQutCw0YDRjyDQni7QkdC-0LPQsNGU0LLRgdGM0LrQvtCz0L4sINCa0YDQtdC80LXQvdGH0YPQuiwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM5NjAw!5e0!3m2!1suk!2sua!4v1696480866935!5m2!1suk!2sua"
+            width="600" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+      <p>© 2023 Всі права застережено Learn&Dream School</p>
+    </div>
+  </footer>
+  <script src="./web/js/plugins/smooth-scroll.js"></script>
+  <script src="./web/js/index.js"></script>
+  <script src="./web/js/jquery/jquery3.7.1.min.js"></script>
+  <script src="./web/js/jquery/jquery-ui.min.js"></script>
+
+  <script src="./web/js/bootstrap/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
 </body>
 
 </html>
