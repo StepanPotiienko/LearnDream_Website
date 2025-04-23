@@ -1,59 +1,62 @@
-.infrastruktura {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: 15px;
-    text-align: center;
-    font-family: "Rubik Spray Paint", system-ui;
-    font-style: normal;
+.title-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-align: center;
+  font-family: "Rubik Spray Paint", system-ui;
+  font-style: normal;
 
-    background: linear-gradient(135deg, rgba(123, 126, 207, 0.8), rgba(121, 144, 213, 0.8)), 
-                url("../images/photos/photo-9.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background: linear-gradient(
+      135deg,
+      rgba(123, 126, 207, 0.8),
+      rgba(121, 144, 213, 0.8)
+    ),
+    url("../images/photos/photo-9.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
 .classroom {
-    width: 48%;
+  width: 48%;
 }
 
 .center-text {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 70px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .modern_title {
-    color: #57AEFF;
-    font-size: 48px;
-    font-family: "Montserrat Alternates Bold";
-    font-weight: 700;
-    word-wrap: break-word;
+  color: #57aeff;
+  font-size: 48px;
+  font-family: "Montserrat Alternates Bold";
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 .modern_text {
-    color: black;
-    font-size: 32px;
-    font-family: "Montserrat Alternates Regular";
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: left;
+  color: black;
+  font-size: 32px;
+  font-family: "Montserrat Alternates Regular";
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .grid {
-    margin: 0 auto;
-    margin-top: 70px;
-    width: 740px;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 740px;
 }
 
 .grid img {
-    height: 355px;
-    padding: 15px
+  height: 355px;
+  padding: 15px;
 }

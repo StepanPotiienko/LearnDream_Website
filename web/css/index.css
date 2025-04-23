@@ -1,5 +1,29 @@
 /* This file is only used in index.html page */
 
+.carousel-indicator {
+  transform: scaleX(0.4) scaleY(4);
+  border-radius: 100%;
+  -webkit-transform: scaleX(0.4) scaleY(4);
+  -moz-transform: scaleX(0.4) scaleY(4);
+  -ms-transform: scaleX(0.4) scaleY(4);
+  -o-transform: scaleX(0.4) scaleY(4);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+#reviews .carousel-item.active,
+#reviews .carousel-item-next,
+#reviews .carousel-item-prev {
+  display: block;
+}
+
+#reviews .carousel-control-next-icon,
+#reviews .carousel-control-prev-icon {
+  display: none;
+  visibility: hidden;
+}
+
 #brief-introduction {
   width: 100vw;
   min-width: 100vw;
