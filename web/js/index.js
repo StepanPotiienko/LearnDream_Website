@@ -54,7 +54,13 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden")
 hiddenElements.forEach((el) => observer.observe(el))
 
-const ChangePanda = () => {
-    //TODO: Image of Panda changes randomly after every reload
-    return
+window.onload = function () {
+    let panda = document.getElementById("panda")
+    let randomImagesList = ["/web/images/panda_male.png", "/web/images/panda_female.png"]
+    let randomIndex = getRandomInt(2);
+    panda.src = randomImagesList[randomIndex];
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
 }
