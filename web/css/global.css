@@ -14,6 +14,11 @@
   display: none;
 }
 
+.logo {
+  width: 5%;
+  height: 5%;
+}
+
 .vr {
   color: var(--blue);
   opacity: 1;
@@ -208,6 +213,10 @@ iframe {
   max-width: 15vw;
 }
 
+.footer-contacts .row .col {
+  max-height: 5%;
+  max-width: 5%;
+}
 
 @media screen and (max-width: 1130px) {
   .navbar {
@@ -215,20 +224,8 @@ iframe {
   }
 }
 
-
 @media screen and (max-width: 1280px) {
   .navbar {
     background-color: white;
-  }
-}
-
-@media screen and (max-width: 1782px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  .logo {
-    width: 5%;
-    height: 5%;
   }
 }

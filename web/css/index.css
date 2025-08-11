@@ -276,18 +276,17 @@ footer {
 .col button {
   all: unset;
   cursor: pointer;
-  width: 4vh;
-  height: 4vh;
+  width: 48px;
+  height: 48px;
   background-color: #fce731;
   border-radius: 25%;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 
 .col button:hover {
   color: whitesmoke;
-  transform: scale(1.05);
 }
 
 #schools {
@@ -442,12 +441,6 @@ footer {
   #footer-contacts .container {
     margin: 0;
     padding: 0;
-  }
-
-  #footer-contacts .container .col button {
-    font-size: 3rem;
-    width: 12.5vw;
-    height: 10vh;
   }
 }
 
