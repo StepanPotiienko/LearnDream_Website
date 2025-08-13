@@ -106,14 +106,6 @@
   font-weight: 800;
 }
 
-.group-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 95vw;
-  gap: 1vw;
-}
-
 #accordionExample {
   width: 40vw;
 }
@@ -169,8 +161,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 6vh;
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -191,8 +181,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0 5vw;
+  background-color: var(--yellow);
 }
 
 .rectangle_blue {
@@ -200,12 +189,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #57aeff;
-  width: 100%;
+  background: var(--blue);
   max-width: 60%;
+  height: 800px;
 }
 
 .rectangle_blue img {
+  position: absolute;
+  top: 0;
+  left: 0;
   max-width: 80px;
   height: auto;
 }
@@ -223,15 +215,14 @@
   margin: 0 105px 0 105px;
 }
 
-.slide_info img {
-  max-width: 25vw;
+.group-row {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: row;
 }
 
-.lightning {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 0%;
+.slide_info img {
+  max-width: 25vw;
 }
 
 footer {
@@ -498,13 +489,6 @@ footer {
     left: 35%;
   }
 
-  .group-row {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    margin-top: 60vh;
-  }
-
   .carousel,
   .accordion {
     width: 90vw !important;
@@ -585,7 +569,7 @@ footer {
   }
 
   #reviews {
-    text-align: center; 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
