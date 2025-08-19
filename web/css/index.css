@@ -1,23 +1,63 @@
 /* This file is only used in index.html page */
 
 #brief-introduction {
-  width: 100vw;
-  min-width: 100vw;
-
-  height: 100vh;
-  min-height: 100vh;
+  width: 100%;
+  height: 90vh;
+  min-height: 90vh;
 }
 
 #brief-introduction .image {
   width: 50%;
-  min-width: 50vw;
+  max-width: 25vw;
 }
 
-#brief-introduction .content {
-  width: auto;
-  max-width: 50%;
+.grid-table-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+}
 
-  gap: 5vh;
+.grid-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-table .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grid-table .row:last-child {
+  width: 100%;
+}
+
+.cell {
+  width: 100%;
+  max-width: 30vw;
+  height: 100%;
+  min-height: 20vh;
+  max-height: 25vh;
+  box-shadow: 0px 0px 7px 0px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.cell-white {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.cell-blue {
+  background-color: var(--blue);
+  color: white;
+  min-width: 50%;
+  max-width: 70%;
 }
 
 .columns {
@@ -66,14 +106,6 @@
   font-weight: 800;
 }
 
-.group-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 95vw;
-  gap: 1vw;
-}
-
 #accordionExample {
   width: 40vw;
 }
@@ -91,6 +123,7 @@
 #reviews #text-carousel {
   width: 100%;
   height: 100%;
+  max-width: 90%;
 }
 
 .carousel-text {
@@ -128,8 +161,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 6vh;
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -148,20 +179,33 @@
 
 .slide_info {
   display: flex;
-  position: relative;
-  width: 1442px;
-  height: 817px;
-  margin: 0 auto;
-  margin-top: 51px;
-  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
 }
 
 .rectangle_blue {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #57aeff;
-  width: 75vh;
+  flex-direction: row;
+  background: var(--blue);
+  max-width: 60%;
+  height: 800px;
+}
+
+.rectangle_blue img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 80px;
+  height: auto;
+}
+
+.rectangle_blue .text {
+  font-size: 1.4rem;
+  color: white;
+  margin: 0;
 }
 
 .slide_info .text {
@@ -171,21 +215,14 @@
   margin: 0 105px 0 105px;
 }
 
-.slide_info .image {
-  margin: 0;
+.group-row {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: row;
 }
 
-.rectangle_blue img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.lightning {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 0%;
+.slide_info img {
+  max-width: 25vw;
 }
 
 footer {
@@ -240,18 +277,17 @@ footer {
 .col button {
   all: unset;
   cursor: pointer;
-  width: 4vh;
-  height: 4vh;
+  width: 48px;
+  height: 48px;
   background-color: #fce731;
   border-radius: 25%;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 
 .col button:hover {
   color: whitesmoke;
-  transform: scale(1.05);
 }
 
 #schools {
@@ -377,6 +413,10 @@ footer {
 }
 
 @media screen and (max-width: 1782px) {
+  .cell {
+    font-size: small;
+  }
+
   .mission-vision {
     padding: 1%;
     text-align: center;
@@ -407,22 +447,11 @@ footer {
     margin: 0;
     padding: 0;
   }
-
-  #footer-contacts .container .col button {
-    font-size: 3rem;
-    width: 12.5vw;
-    height: 10vh;
-  }
 }
 
 @media screen and (max-width: 1600px) {
   .fill_form {
     width: 30vw;
-  }
-
-  .slide_info {
-    display: flex;
-    flex-direction: column;
   }
 
   .slide_info .text {
@@ -435,8 +464,19 @@ footer {
   }
 
   .rectangle_blue {
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
     padding: 2%;
+  }
+
+  .rectangle_blue .text {
+    height: fit-content;
+    font-size: 24px;
   }
 
   .rectangle_blue,
@@ -447,13 +487,6 @@ footer {
   .lightning {
     top: 130%;
     left: 35%;
-  }
-
-  .group-row {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    margin-top: 60vh;
   }
 
   .carousel,
@@ -472,6 +505,27 @@ footer {
 }
 
 @media screen and (max-width: 1130px) {
+  #brief-introduction {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .grid-table {
+    overflow: hidden;
+    gap: 2vh;
+  }
+
+  .grid-table .row {
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .cell {
+    padding: 0% 5%;
+    width: 100%;
+    max-width: 100%;
+  }
+
   #svg-full,
   .marquee-animation-text-block {
     display: none;
@@ -500,10 +554,6 @@ footer {
     width: 0;
     height: 0;
     overflow: hidden;
-  }
-
-  .navbar-collapse .btn[type="submit"] {
-    width: 80vw !important;
   }
 
   .vstup_rectangle {
