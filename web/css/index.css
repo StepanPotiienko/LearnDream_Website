@@ -14,6 +14,7 @@
 .grid-table-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 3vh;
 }
@@ -40,12 +41,11 @@
   height: 100%;
   min-height: 20vh;
   max-height: 25vh;
-  padding: 10% 0%;
   box-shadow: 0px 0px 7px 0px black;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: medium;
+  font-size: 24px;
 }
 
 .cell-white {
@@ -57,13 +57,13 @@
   background-color: var(--blue);
   color: white;
   min-width: 50%;
-  max-width: 55%;
+  max-width: 70%;
 }
 
 .columns {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
 }
 
 .column {
@@ -104,14 +104,6 @@
   color: #57aeff;
   font-size: 2rem;
   font-weight: 800;
-}
-
-.group-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 95vw;
-  gap: 1vw;
 }
 
 #accordionExample {
@@ -169,8 +161,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 6vh;
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -191,8 +181,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0 5vw;
+  background-color: var(--yellow);
 }
 
 .rectangle_blue {
@@ -200,12 +189,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #57aeff;
-  width: 100%;
+  background: var(--blue);
   max-width: 60%;
+  height: 800px;
 }
 
 .rectangle_blue img {
+  position: absolute;
+  top: 0;
+  left: 0;
   max-width: 80px;
   height: auto;
 }
@@ -223,15 +215,14 @@
   margin: 0 105px 0 105px;
 }
 
-.slide_info img {
-  max-width: 25vw;
+.group-row {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: row;
 }
 
-.lightning {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 0%;
+.slide_info img {
+  max-width: 25vw;
 }
 
 footer {
@@ -286,18 +277,17 @@ footer {
 .col button {
   all: unset;
   cursor: pointer;
-  width: 4vh;
-  height: 4vh;
+  width: 48px;
+  height: 48px;
   background-color: #fce731;
   border-radius: 25%;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 
 .col button:hover {
   color: whitesmoke;
-  transform: scale(1.05);
 }
 
 #schools {
@@ -457,12 +447,6 @@ footer {
     margin: 0;
     padding: 0;
   }
-
-  #footer-contacts .container .col button {
-    font-size: 3rem;
-    width: 12.5vw;
-    height: 10vh;
-  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -503,13 +487,6 @@ footer {
   .lightning {
     top: 130%;
     left: 35%;
-  }
-
-  .group-row {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    margin-top: 60vh;
   }
 
   .carousel,
@@ -592,7 +569,7 @@ footer {
   }
 
   #reviews {
-    text-align: center; 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
