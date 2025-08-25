@@ -183,6 +183,18 @@
   transition: 0.25s;
 }
 
+.posts {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.post {
+  width: auto;
+  max-width: 5vw;
+  background-color: red;
+}
+
 .fill_form:hover {
   text-decoration: none;
   background-color: transparent;
