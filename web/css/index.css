@@ -117,10 +117,6 @@
   gap: 1vw;
 }
 
-#accordionExample {
-  width: 40vw;
-}
-
 #carouselExample {
   width: 40vw;
 }
@@ -241,6 +237,36 @@
   left: 50%;
   transform: translate(-50%, 0%);
   bottom: 0%;
+}
+
+.nav-list {
+  border-right: 2px solid #90caf9;
+}
+
+.nav-item {
+  border: none;
+  background: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #757575;
+  border-bottom: 1px solid #bbdefb;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  background: #e3f2fd;
+}
+
+.nav-item.active {
+  background: #64b5f6;
+  color: white;
+  font-weight: bold;
+}
+
+#content-area {
+  border-left: none;
 }
 
 footer {
