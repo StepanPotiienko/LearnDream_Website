@@ -239,11 +239,11 @@
   bottom: 0%;
 }
 
-.nav-list {
+#additional_education .nav-list {
   border-right: 2px solid #90caf9;
 }
 
-.nav-item {
+#additional_education .nav-item {
   border: none;
   background: white;
   padding: 15px;
@@ -255,11 +255,11 @@
   transition: all 0.2s;
 }
 
-.nav-item:hover {
+#additional_education .nav-item:hover {
   background: #e3f2fd;
 }
 
-.nav-item.active {
+#additional_education .nav-item.active {
   background: #64b5f6;
   color: white;
   font-weight: bold;
